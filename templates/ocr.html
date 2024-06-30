@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="static/ocr.js"></script> <!-- Adjust the path as necessary -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #main-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #canvas {
+            border: 1px solid #000;
+            margin: 0 auto;
+            display: block;
+        }
+        #result {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <h1>OCR Demo</h1>
+        <canvas id="canvas" width="280" height="280"></canvas>
+        <form name="input">
+            <p>Digit: <input id="digit" type="text"> </p>
+            <input type="button" value="Train" onclick="ocrDemo.trainNumber()">
+            <input type="button" value="Test" onclick="ocrDemo.predictNumber()">
+            <input type="button" value="Reset" onclick="ocrDemo.resetCanvas();"/>
+        </form> 
+        <div id="result"></div>
+    </div>
+</body>
+</html>
