@@ -24,3 +24,17 @@ Welcome to the OCR Neural Network Project! This project demonstrates a simple ye
 ```bash
 git clone https://github.com/yourusername/ocr-neural-network.git
 cd ocr-neural-network
+
+Install Dependencies
+Ensure you have Python installed, then install the required packages:
+
+pip install numpy pillow tqdm tensorflow flask
+
+Run the Server
+Start the server to handle HTTP requests:
+
+python server.py
+
+Open the Web Interface
+Open a web browser and navigate to http://127.0.0.1:5000 to access the drawing canvas and interact with the neural network.
+
